@@ -6,6 +6,7 @@ from login import LoginWindow
 from complaint import ComplaintPage
 
 Window.clearcolor = (1, 1, 1, 1)
+__version__ = "0.2"
 from kivy.uix.boxlayout import BoxLayout
 
 class MainPage(BoxLayout):
