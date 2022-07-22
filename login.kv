@@ -1,0 +1,38 @@
+<LoginWindow>:
+    id: log_page
+    cols: 1
+    size_hint: (0.6,0.7)
+    spacing: (0,5)
+	pos_hint:{'center_x':0.5,'center_y':0.5}
+	Image:
+	    source: "dex_logo.jpg"
+	Label:
+	    id: message
+	    text: ""
+	    markup: True
+	TextInput:
+	    id: email_input
+	    hint_text:'Your email'
+	    multiline:False
+	    font_size:18
+	    background_color:(1, 1, 1, 1)
+	    padding_y:(10,10)
+	    size_hint:(1,0.5)
+		
+	TextInput:
+	    id: password_input
+	    hint_text:'Password'
+	    multiline:False
+	    password:True
+	    font_size:18
+	    background_color:(1, 1, 1, 1)
+	    padding_y:(10,10)
+	    size_hint:(1,0.5)
+	Label:
+	    id:pos1
+	Button:
+	    text:'Login'
+	    background_color: "#00C8F0"
+	    font_size:24
+	    size_hint:(1,0.6)
+	    on_release: root.validate_user()

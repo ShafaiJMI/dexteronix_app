@@ -1,0 +1,41 @@
+<ComplaintPage>:
+    id: cmp_page
+    cols: 1
+    size_hint: (0.6,0.7)
+    spacing: (0,5)
+    pos_hint: {'center_x':0.5,'center_y':0.5}
+    Label:
+        text: "Register Your Complaint here"
+        font_size: 18
+        color: "#000000"
+    Label:
+        id: message
+        text: ""
+        markup: True
+    TextInput:
+        id: bin_id
+        hint_text: 'Bin ID'
+        multiline: False
+        background_color: (1, 1, 1, 1)
+        padding_y: (10,10)
+        size_hint: (1,0.4)
+    TextInput:
+        id: complaint_type
+        hint_text: 'Complaint Type'
+        multiline: False
+        background_color: (1, 1, 1, 1)
+        line_height: 18
+        padding_y: (10,10)
+        size_hint: (1,0.4)
+    TextInput:
+        id: complaint
+        hint_text: 'Complaint'
+        multiline: True
+        background_color: (1, 1, 1, 1)
+        padding_y: (10,10)
+    Button:
+        text: 'Submit'
+        background_color: "#00C8F0"
+        font_size: 24
+        size_hint: (1,0.4)
+        on_release: root.register_complaint()
