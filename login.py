@@ -24,7 +24,7 @@ class LoginWindow(GridLayout):
 		else:
 			if email=="user" and password =="123":
 				message.text = "[color=#00ff00]Logging in[/color]"
-				self.parent.parent.current = 'comp_screen'
+				self.parent.parent.current = 'home_screen'
 			else:
 				message.text = "[color=#ff0000]Invalid Email or Password[/color]"
 		

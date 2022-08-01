@@ -1,0 +1,28 @@
+<HomePage>:
+    id: home_page
+    orientation:'vertical'
+    size_hint: (0.6,0.7)
+    pos_hint:{'center_x':0.5,'center_y':0.5}
+    Label:
+        text: "Dashboard"
+        font_size: 18
+        color: "#000000"
+    BoxLayout:
+        orientation:'horizontal'
+	    Label:
+            text: "Level : 60%"
+            font_size: 18
+            color: "#000000"
+        Label:
+            text: "Bin ID : bin_102"
+            font_size: 18
+            color: "#000000"
+    BoxLayout:
+        orientation:'vertical'
+        Button:
+            text:"Register Complaint"
+            background_color: "#00C8F0"
+	        font_size:24
+	        size_hint:(1,0.6)
+            on_release: root.parent.parent.current = "comp_screen"
+	    
